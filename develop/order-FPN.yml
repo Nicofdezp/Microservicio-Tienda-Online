@@ -1,0 +1,17 @@
+server:
+  port: 9013    #service port
+
+eureka:         #tells about the Eureka server details and its refresh time
+ client:
+  serviceUrl:
+   defaultZone: ${EUREKA_URI:http://localhost:9015/eureka}
+   healthcheck:
+    enabled: true
+
+spring:
+  application:
+    name: order-service-FPN   #current service name to be used by the eureka server
+  data:
+    mongodb:
+      database: order-service_db-FPN
+      port: 27017
