@@ -28,7 +28,7 @@ spring:
          predicates:
            - Path=/api/v1/orders/** #Path to access the service
 
-        - id: product-service-id #Product service route declaration
-          uri: lb://product-service
-          predicates:
-            - Path=/api/v1/products/** #Path to access the service
+       - id: product-service-id #Product service route declaration
+         uri: lb://product-service
+         predicates:
+           - Path=/api/v1/products/** #Path to access the service
