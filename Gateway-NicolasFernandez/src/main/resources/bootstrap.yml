@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gw-FPN
+  cloud:
+    config:
+      uri: http://localhost:9014
+      retry:
+        max-attempts: 10
+        initial-interval: 5000
+      fail-fast: true
+  profiles:
+    active: local

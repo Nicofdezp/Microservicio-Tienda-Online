@@ -1,0 +1,25 @@
+server:
+  port: 9014
+
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Nicofdezp/Microservicio-Tienda-Online
+          force-pull: true
+          clone-on-start: true
+          username: Nicofdezp
+          password:
+          default-label: develop
+
+          repos:
+            local:
+              uri: https://github.com/Nicofdezp/Microservicio-Tienda-Online
+              force-pull: true
+              clone-on-start: true
+              username: Nicofdezp
+              password:
+              label: develop
